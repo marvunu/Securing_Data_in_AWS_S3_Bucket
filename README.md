@@ -38,7 +38,7 @@ Enabled server-side encryption using AWS KMS, choosing or creating a KMS key to 
 
 <br />
 <br />
-Added a bucket policy that grants read-only access (GetObject) to the root user identified by their ARN. This policy ensures that only the designated root user can view or download objects from the bucket, maintaining controlled and auditable access to stored data.  It does not allow uploading, deleting, or listing objects. <br/>
+Added a bucket policy that grants read-only access (GetObject) to the root user identified by their ARN. This policy ensures that only the designated root user can view or download objects from the bucket, maintaining controlled and auditable access to stored data.  It does not allow uploading, deleting, or listing objects. However, using a root user ARN is discouraged in practice, since the root user already has unrestricted privileges in its own account and is not meant for routine access or integration. <br/>
 <img src="https://i.imgur.com/MRBHCVt.png" height="80%" width="80%" alt="S3bucket"/>
 <img src="https://i.imgur.com/5EdqUsr.png" height="80%" width="80%" alt="S3bucket"/>
 <br />
